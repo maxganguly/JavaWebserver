@@ -2,23 +2,13 @@
 
 ### Deployment 
 
- #### Ant
-Benötigt ANT 1.7+
-
 ````shell
-git clone https://github.com/JavaWebserver-maxganguly-tgm.git
-cd JavaWebserver-mganguly-tgm
-ant -f build.xml
-java -jar Server.jar
-````
-
-##### Alternativ
-````shell
-git clone https://github.com/JavaWebserver-maxganguly-tgm.git
-cd JavaWebserver-mganguly-tgm
+git clone https://github.com/maxganguly/JavaWebserver.git
+cd JavaWebserver
 javac -sourcepath ./src/ -d ./out/ ./src/main/Main.java
 cd out
 jar --create --file ../Server.jar --main-class=main.Main main/Main.class server/*.class 
+cd..
 java -jar Server.jar
 ````
 ### Veränderungen
